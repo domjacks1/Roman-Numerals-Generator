@@ -15,4 +15,8 @@ describe('Test Roman Numeral Generator', function() {
   it('should return III when given 3', function() {
     assert.equal(romanNumeralGenerator.generate(3), "III");
   });
+
+  it('should return IV when given 4', function() {
+    assert.equal(romanNumeralGenerator.generate(4), "IV");
+  });
 });
