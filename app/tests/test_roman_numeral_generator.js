@@ -52,4 +52,44 @@ describe('Test Roman Numeral Generator', function() {
   it('should return IX when given 9', function() {
     assert.equal(romanNumeralGenerator.generate(9), "IX")
   })
+
+  it('should return X when given 10', function() {
+    assert.equal(romanNumeralGenerator.generate(10), "X")
+  })
+
+  it('should return XL when given 40', function() {
+    assert.equal(romanNumeralGenerator.generate(40), "XL")
+  })
+
+  it('should return L when given 50', function() {
+    assert.equal(romanNumeralGenerator.generate(50), "L")
+  })
+
+  it('should return XC when given 90', function() {
+    assert.equal(romanNumeralGenerator.generate(90), "XC")
+  })
+
+  it('should return C when given 100', function() {
+    assert.equal(romanNumeralGenerator.generate(100), "C")
+  })
+
+  it('should return CD when given 400', function() {
+    assert.equal(romanNumeralGenerator.generate(400), "CD")
+  })
+
+  it('should return D when given 500', function() {
+    assert.equal(romanNumeralGenerator.generate(500), "D")
+  })
+
+  it('should return CM when given 900', function() {
+    assert.equal(romanNumeralGenerator.generate(900), "CM")
+  })
+
+  it('should return M when given 1000', function() {
+    assert.equal(romanNumeralGenerator.generate(1000), "M")
+  })
+
+  it('should return MMMCMXCIX when given 3999', function() {
+    assert.equal(romanNumeralGenerator.generate(3999), "MMMCMXCIX")
+  })
 })

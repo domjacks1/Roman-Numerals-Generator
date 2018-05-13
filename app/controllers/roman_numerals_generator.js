@@ -20,8 +20,8 @@ class RomanNumeralGenerator {
   static generate(number) {
 
     if (isNaN(number)) throw new Error("Value must be a number")
-    if (number < 1) throw new Error("Number must be bigger than 0")
-    if (number >= 3999) throw new Error("Number must be smaller than 4000")
+    if (number <= 0) throw new Error("Number must be bigger than 0")
+    if (number >= 4000) throw new Error("Number must be smaller than 4000")
 
     const keys = Object.keys(romanNumerals).reverse()
 
