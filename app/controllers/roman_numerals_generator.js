@@ -2,11 +2,15 @@ class RomanNumeralGenerator {
 
   static generate(number) {
 
-    if (number == 1) return "I"
-    if (number == 2) return "II"
+    var result = ""
+
+    for (var i = 0; i < number; i++) {
+      result += "I"
+    }
+
+    return result
 
   }
-
 }
 
 module.exports = RomanNumeralGenerator;
