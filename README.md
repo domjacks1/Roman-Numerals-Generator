@@ -17,5 +17,5 @@ $ npm test
 
 ### Run
 ```
-$ npm run <number_to_convert>
+$ npm start -- <number_to_convert>
 ```

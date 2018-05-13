@@ -4,6 +4,7 @@
   "description": "Simple Node application to convert CLI application to convert Decimal numbers to their Roman numeral equivalent",
   "main": "app/app.js",
   "scripts": {
+    "start": "node app/app.js",
     "test": "mocha app/tests"
   },
   "author": "domjackson1",
