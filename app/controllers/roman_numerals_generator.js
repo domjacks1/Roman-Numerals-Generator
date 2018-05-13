@@ -8,6 +8,10 @@ class RomanNumeralGenerator {
 
   static generate(number) {
 
+    if (number < 1) {
+      throw new Error("Number must be bigger than 0");
+    }
+
     const keys = Object.keys(romanNumerals).reverse();
 
     var result = ""

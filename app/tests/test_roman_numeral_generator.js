@@ -1,4 +1,5 @@
-var assert = require('assert');
+const assert = require('assert');
+const { expect } = require('chai')
 
 var romanNumeralGenerator = require('../controllers/roman_numerals_generator.js');
 
@@ -26,5 +27,13 @@ describe('Test Roman Numeral Generator', function() {
 
   it('should return VI when given 6', function() {
     assert.equal(romanNumeralGenerator.generate(6), "VI");
+  });
+
+  it('should throw error when given 0', function() {
+    var errorThrowingFunction = function() {
+      romanNumeralGenerator.generate(0)
+    };
+
+    expect(errorThrowingFunction).to.throw()
   });
 });
