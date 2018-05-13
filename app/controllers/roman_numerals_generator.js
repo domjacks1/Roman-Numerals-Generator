@@ -12,7 +12,7 @@ class RomanNumeralGenerator {
     if (number < 1) throw new Error("Number must be bigger than 0")
     if (number >= 3999) throw new Error("Number must be smaller than 4000")
 
-    const keys = Object.keys(romanNumerals).reverse();
+    const keys = Object.keys(romanNumerals).reverse()
 
     var result = ""
 
@@ -27,4 +27,4 @@ class RomanNumeralGenerator {
   }
 }
 
-module.exports = RomanNumeralGenerator;
+module.exports = RomanNumeralGenerator
