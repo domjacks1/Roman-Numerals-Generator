@@ -36,4 +36,20 @@ describe('Test Roman Numeral Generator', function() {
 
     expect(errorThrowingFunction).to.throw()
   });
+
+  it('should throw error when given 4000', function() {
+    var errorThrowingFunction = function() {
+      romanNumeralGenerator.generate(4000)
+    };
+
+    expect(errorThrowingFunction).to.throw()
+  });
+
+  it('should throw error when given -1', function() {
+    var errorThrowingFunction = function() {
+      romanNumeralGenerator.generate(-1)
+    };
+
+    expect(errorThrowingFunction).to.throw()
+  });
 });
