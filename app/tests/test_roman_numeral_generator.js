@@ -33,7 +33,6 @@ describe('Test Roman Numeral Generator', function() {
     var errorThrowingFunction = function() {
       romanNumeralGenerator.generate(0)
     };
-
     expect(errorThrowingFunction).to.throw()
   });
 
@@ -41,7 +40,6 @@ describe('Test Roman Numeral Generator', function() {
     var errorThrowingFunction = function() {
       romanNumeralGenerator.generate(4000)
     };
-
     expect(errorThrowingFunction).to.throw()
   });
 
@@ -49,7 +47,13 @@ describe('Test Roman Numeral Generator', function() {
     var errorThrowingFunction = function() {
       romanNumeralGenerator.generate(-1)
     };
+    expect(errorThrowingFunction).to.throw()
+  });
 
+  it('should throw error when not given a number', function() {
+    var errorThrowingFunction = function() {
+      romanNumeralGenerator.generate("hello")
+    };
     expect(errorThrowingFunction).to.throw()
   });
 });
