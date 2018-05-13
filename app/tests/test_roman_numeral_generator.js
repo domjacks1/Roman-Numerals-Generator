@@ -48,4 +48,8 @@ describe('Test Roman Numeral Generator', function() {
     var errorThrowingFunction = () => romanNumeralGenerator.generate("hello")
     expect(errorThrowingFunction).to.throw()
   })
+
+  it('should return IX when given 9', function() {
+    assert.equal(romanNumeralGenerator.generate(9), "IX")
+  })
 })
