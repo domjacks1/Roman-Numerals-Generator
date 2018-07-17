@@ -1,3 +1,3 @@
 var romanNumeralGenerator = require('./controllers/roman_numerals_generator.js');
 
-console.log(romanNumeralGenerator.generate(process.argv[2]));
+console.log(romanNumeralGenerator.generate(Number(process.argv[2])));

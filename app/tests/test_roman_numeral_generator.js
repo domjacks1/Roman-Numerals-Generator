@@ -92,4 +92,8 @@ describe('Test Roman Numeral Generator', function() {
   it('should return MMMCMXCIX when given 3999', function() {
     assert.equal(romanNumeralGenerator.generate(3999), "MMMCMXCIX")
   })
+
+  it('should correctly convert String of number into Number', function() {
+    assert.equal(romanNumeralGenerator.generate("3999"), "MMMCMXCIX")
+  })
 })
