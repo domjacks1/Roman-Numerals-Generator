@@ -1,4 +1,4 @@
-Roman Numeral Generator
+Roman Numerals Generator
 -----------------------
 
 Simple Node application to convert Decimal numbers to their Roman numeral equivalent.
