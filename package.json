@@ -1,16 +1,16 @@
 {
-  "name": "roman_numerals_generator",
+  "name": "roman-numerals-generator",
   "version": "1.0.0",
-  "description": "Simple Node application to convert CLI application to convert Decimal numbers to their Roman numeral equivalent",
+  "description": "Simple Node application to convert Decimal numbers to their Roman numeral equivalent",
   "main": "app/app.js",
   "scripts": {
     "start": "node app/app.js",
     "test": "mocha app/tests"
   },
-  "author": "domjackson1",
+  "author": "domjacks1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/domjackson1/Roman-Numerals-Generator.git"
+    "url": "https://github.com/domjacks1/roman-numerals-generator.git"
   },
   "dependencies": {
     "chai": "^4.1.2",
